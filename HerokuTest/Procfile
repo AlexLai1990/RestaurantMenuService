@@ -1,1 +1,1 @@
-web: python ./Flask_Test/first_flask.py
+web: python ./Flask_Test/first_flask.py runserver 0.0.0.0:$PORT

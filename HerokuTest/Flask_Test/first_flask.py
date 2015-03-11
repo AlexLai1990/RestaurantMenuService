@@ -2,8 +2,10 @@ from flask import Flask, render_template, request, redirect, url_for, flash, jso
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
+import os
+
 import sys
-sys.path.append("../")
+sys.path.append(".")
 from database_setup import Restaurant, Base, MenuItem
 
 engine = create_engine('sqlite:///restaurantmenu.db')
@@ -120,6 +122,6 @@ def deleteMenuItem(restaurant_id, menu_id):
 	return redirect(url_for('getMenus', restaurant_id = restaurant_id)) 
 		
 if __name__ == '__main__':
-	app.secret_key = 'my_key'
-	app.debug = True
-	app.run(host = '0.0.0.0', port = 5000)
+    app.secret_key = 'my_key'
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host = '0.0.0.0', port = port)
