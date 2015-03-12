@@ -6,6 +6,12 @@ Users can have webUI to do CRUD for restaurants and menus.
 The server is implement in Python with Flask Framework, the Database is using sqlite with SQLAlchmey ORM to manipulate data.
 The front-end is using bootstrap and JQuery to do some UI stuffs.
 
+The application is still Ongoing to make a Menu Order System for customers.
+
+Demo Link:
+	
+	*  http://whispering-refuge-1911.herokuapp.com/
+
 
 ## Deploy app on Heroku: 
 
@@ -26,14 +32,14 @@ The front-end is using bootstrap and JQuery to do some UI stuffs.
 
 Note : 
 * How to create requirements.txt?
-
-
-Pip freeze >! requirements
+	
+	Pip freeze >! requirements
 
 * How to create Procfile?
-In heroku, the server will allocate dynamic port for your application.
 
-So in Procfile:
+	In Heroku, the server will allocate dynamic port for your application.
+
+	In Procfile:
 
 	web: python ./Flask_Test/first_flask.py runserver 0.0.0.0:$PORT
 
@@ -42,11 +48,14 @@ And in app.py:
     app.run(host = '0.0.0.0', port = port)
 
 * How to create runtime.txt?
+
+
 	type "python-2.7.5" in the runtime.txt
 
 
-Ref: 
-https://www.udacity.com/course/ud088
+### Ref: 
+
+https://www.udacity.com/course/ud088 
 
 http://virantha.com/2013/11/14/starting-a-simple-flask-app-with-heroku/
 
