@@ -10,7 +10,7 @@ The project is still ongoing to make a Menu Order System for customers.
 
 Demo Link:
 	
-	http://whispering-refuge-1911.herokuapp.com/
+http://whispering-refuge-1911.herokuapp.com/
 
 
 ## Deploy app on Heroku: 
