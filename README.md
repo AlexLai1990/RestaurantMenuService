@@ -6,11 +6,11 @@ Users can have webUI to do CRUD for restaurants and menus.
 The server is implement in Python with Flask Framework, the Database is using sqlite with SQLAlchmey ORM to manipulate data.
 The front-end is using bootstrap and JQuery to do some UI stuffs.
 
-The application is still Ongoing to make a Menu Order System for customers.
+The project is still ongoing to make a Menu Order System for customers.
 
 Demo Link:
 	
-	*  http://whispering-refuge-1911.herokuapp.com/
+	http://whispering-refuge-1911.herokuapp.com/
 
 
 ## Deploy app on Heroku: 
@@ -43,9 +43,11 @@ Note :
 
 	web: python ./Flask_Test/first_flask.py runserver 0.0.0.0:$PORT
 
-And in app.py:
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host = '0.0.0.0', port = port)
+    In app.py:
+	
+		port = int(os.environ.get('PORT', 5000))
+		
+		app.run(host = '0.0.0.0', port = port)
 
 * How to create runtime.txt?
 
